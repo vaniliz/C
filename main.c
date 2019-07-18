@@ -3,11 +3,16 @@
 
 int main()
 {
- printf("%s is the best person ever\n", "This User");/* %s es sustituido por strings*/
- printf("%s is the best %s ever\n","This User","programmer" );
- printf("I ate %d corndog last night\n", 9);/* %d es sustituido por un numero entero*/
- printf("El numero Pi vale %f\n", 3.14159);/* %f es sustituido por un numero decimal*/
- printf("El numero Pi vale %.4f\n", 3.14159);
- printf("El numero Pi vale %.2f\n", 3.14159);/*El .# despues del % indica el numero de decimales que se mostraran en pantalla*/
+    /*no se debe empezar el nombre de una variable con un numero*/
+    /*no se puedne poner espacios en el nombre de la variable*/
+    int age;/*int es para declarar numeros enteros*/
+    int currentyear;
+    int birthyear;
+
+    currentyear=2019;
+    birthyear=1998;/*asignamos un valor numerico a la variable*/
+    age= currentyear-birthyear;/*se realiza la opreacion para obtener la edad correspondiente*/
+
+    printf("User is %d years old\n",age);/*imprimimos mensaje en pantalla*/
     return 0;
 }
