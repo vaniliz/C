@@ -3,16 +3,21 @@
 
 int main()
 {
-    /*no se debe empezar el nombre de una variable con un numero*/
-    /*no se puedne poner espacios en el nombre de la variable*/
-    int age;/*int es para declarar numeros enteros*/
-    int currentyear;
-    int birthyear;
+    char name[20]="'User name'";/*char se usa para declarar una variable tipo 'array'
+                              name es el nombre de la variable y el numero entre corchetes
+                              es el numero de caracteres que sera posible escribir en la variable*/
+    printf("My name is %s \n", name);
 
-    currentyear=2019;
-    birthyear=1998;/*asignamos un valor numerico a la variable*/
-    age= currentyear-birthyear;/*se realiza la opreacion para obtener la edad correspondiente*/
+    name[1]= 'z';/*cambiamos el valor de la posicion 1 's' por 'z'*/
+    printf("My name is %s \n", name);
 
-    printf("User is %d years old\n",age);/*imprimimos mensaje en pantalla*/
+    char food[]="pizza";
+    printf("My best food is %s \n", food);
+
+    strcpy(food,"hamburger");/*Para cambiar el valor de una variable array
+                            en el primer espacio va la variable que se desaea
+                            cambiar y en el segundo el nuevo valor*/
+    printf("My best food is %s \n", food);
+
     return 0;
 }
