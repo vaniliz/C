@@ -4,23 +4,13 @@
 
 int main()
 {
-    int pageviews=0;
+    float avgprofit;
+    int priceofpumpkin=10.00;
+    int sales=59.00;
+    int daysworked=7.00;
 
-    pageviews=pageviews+1;
-    printf("page views: %d \n", pageviews);
-    pageviews=pageviews+1;
-    printf("page views: %d \n", pageviews);
-    pageviews=pageviews+1;
-    printf("page views: %d \n", pageviews);
-
-    float balance=100.00;
-
-    balance *= 1.1;
-    printf("\nBalance: %f \n", balance);
-    balance *= 1.1;
-    printf("Balance: %f \n", balance);
-    balance *= 1.1;
-    printf("Balance: %f \n", balance);
+    avgprofit=((float)priceofpumpkin*(float)sales)/(float)daysworked;
+    printf("Average daily profit: $%.2f", avgprofit);
 
     return 0;
 }
