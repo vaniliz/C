@@ -4,21 +4,13 @@
 
 int main()
 {
-    char firstname[20];
-    char crush[20];
-    int numberofbabies;
+    int a =66;
+    int b =21;
+    printf("%d\n",a/b);
 
-    printf("What is your name?\n");
-    scanf("%s", firstname);/*scanf es la funcion utilizada para entrada de datos*/
-
-    printf("Who are you going to marry?\n");
-    scanf("%s", crush);
-
-    printf("How many kids will you have?\n");
-    scanf("%d", &numberofbabies);/*siempre se agrega un & antes de caulquier
-                                 variable, excepto arrays*/
-
-        printf("%s and %s are in love an will have %d babies\n", firstname, crush, numberofbabies);
+    float c=86.0;
+    float d=21.0;
+    printf("%f\n",c/d);
 
     return 0;
 }
