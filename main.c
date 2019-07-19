@@ -4,13 +4,11 @@
 
 int main()
 {
-    int a =66;
-    int b =21;
-    printf("%d\n",a/b);
+    int a = 4+2*6;
+    printf("Result: %d\n", a);
 
-    float c=86.0;
-    float d=21.0;
-    printf("%f\n",c/d);
+    a= (4+2)*6;
+    printf("Result: %d\n", a);
 
     return 0;
 }
