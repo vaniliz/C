@@ -4,26 +4,29 @@
 
 int main()
 {
-    int age;
-    char gender;
+   float grade1;
+   float grade2;
+   float grade3;
 
-    printf("How old are you\n");
-    scanf(" %d", &age);
+   printf("Enter your 3 test grades: \n");
+   scanf( "%f", &grade1);
+   scanf( "%f", &grade2);
+   scanf( "%f", &grade3);
 
-    printf("What is your gender? (m/f)\n");
-    scanf(" %c", &gender);
+   float avg = (grade1+grade2+grade3)/3;
+   printf("Average: %.2f \n", avg);
 
-    if(age>=18){
-        printf("You may enter this website ");
-        if(gender == 'f'){
-            printf("m'lady");
-        }else{
-            printf("dude");
-        }
-    } else{
-        printf("Nothing to see here >:/ !");
-    }
-    /*if es muy util cuando solo tenemos dos opciones*/
+   if (avg>=90){
+    printf("Grade: A");
+   } else if(avg>=80){
+    printf("Grade: B");
+   } else if(avg>=70){
+    printf("Grade: C");
+   } else if(avg>=60){
+    printf("Grade: D");
+   }else{
+    printf(" U are dumb");
+   }
 
     return 0;
 }
