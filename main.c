@@ -17,14 +17,13 @@ int main()
         printf("You may enter this website ");
         if(gender == 'f'){
             printf("m'lady");
-        }
-        if(gender == 'm'){
+        }else{
             printf("dude");
         }
-    }
-    if(age<18){
+    } else{
         printf("Nothing to see here >:/ !");
     }
+    /*if es muy util cuando solo tenemos dos opciones*/
 
     return 0;
 }
