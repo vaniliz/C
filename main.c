@@ -4,13 +4,27 @@
 
 int main()
 {
-    float avgprofit;
-    int priceofpumpkin=10.00;
-    int sales=59.00;
-    int daysworked=7.00;
+    int age;
+    char gender;
 
-    avgprofit=((float)priceofpumpkin*(float)sales)/(float)daysworked;
-    printf("Average daily profit: $%.2f", avgprofit);
+    printf("How old are you\n");
+    scanf(" %d", &age);
+
+    printf("What is your gender? (m/f)\n");
+    scanf(" %c", &gender);
+
+    if(age>=18){
+        printf("You may enter this website ");
+        if(gender == 'f'){
+            printf("m'lady");
+        }
+        if(gender == 'm'){
+            printf("dude");
+        }
+    }
+    if(age<18){
+        printf("Nothing to see here >:/ !");
+    }
 
     return 0;
 }
