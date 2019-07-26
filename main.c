@@ -4,28 +4,11 @@
 
 int main()
 {
-   float grade1;
-   float grade2;
-   float grade3;
+   int hoursStudied=60; //10or more
+   int kidsBeatUp=0; //0kids
 
-   printf("Enter your 3 test grades: \n");
-   scanf( "%f", &grade1);
-   scanf( "%f", &grade2);
-   scanf( "%f", &grade3);
-
-   float avg = (grade1+grade2+grade3)/3;
-   printf("Average: %.2f \n", avg);
-
-   if (avg>=90){
-    printf("Grade: A");
-   } else if(avg>=80){
-    printf("Grade: B");
-   } else if(avg>=70){
-    printf("Grade: C");
-   } else if(avg>=60){
-    printf("Grade: D");
-   }else{
-    printf(" U are dumb");
+   if((hoursStudied>=10)&&(kidsBeatUp==0)){
+    printf("U are a good student");
    }
 
     return 0;
