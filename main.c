@@ -4,12 +4,14 @@
 
 int main()
 {
-   int hoursStudied=60; //10or more
-   int kidsBeatUp=0; //0kids
+    char answer;
+    printf("Do you like bagels? (y/n) \n");
+    scanf(" %c", &answer);
 
-   if((hoursStudied>=10)&&(kidsBeatUp==0)){
-    printf("U are a good student");
-   }
-
+    if ((answer=='y') || (answer=='n')){ //"||" significa or
+        printf("Good job, you didn't mess anything up");
+    }else{
+        printf("Keyboard much?");
+    }
     return 0;
 }
