@@ -4,14 +4,16 @@
 
 int main()
 {
-    char answer;
-    printf("Do you like bagels? (y/n) \n");
-    scanf(" %c", &answer);
+    char lastname [20];
+    printf("Enter your last name: \n");
+    scanf(" %s", lastname);
 
-    if ((answer=='y') || (answer=='n')){ //"||" significa or
-        printf("Good job, you didn't mess anything up");
-    }else{
-        printf("Keyboard much?");
-    }
+    //(test) ? trueCode : falseCode ;
+    (lastname [0] < 'M') ? printf("Blue Team\n") : printf("Red Team\n");
+
+    int friends = 87;
+
+    printf("I have %d friend%s", friends, (friends!=1) ? "s" : "");
+
     return 0;
 }
